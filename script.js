@@ -44,29 +44,5 @@ document.addEventListener("DOMContentLoaded", () => {
       techDiv.appendChild(removeButton)
   
       techContainer.appendChild(techDiv)
-    })
-    
-  
-    devForm.addEventListener("submit", event => {
-      event.preventDefault()
-  
-      const devName = document.querySelector("input[name='name']").value
-      const techItems = document.querySelectorAll(".tech-item")
-      const technologies = []
-  
-      techItems.forEach(techDiv => {
-        const techName = techDiv.querySelector("input[name='techName']").value
-        const experience = techDiv.querySelector("input[type='radio']:checked")?.value
-        if (techName && experience) {
-          technologies.push({ techName, experience })
-        }
-      })
-  
-      developers.push({ devName, technologies })
-      console.log(developers)
-  
-      devForm.reset()
-      techContainer.innerHTML = ""
-    })
-  })
+    }
   
