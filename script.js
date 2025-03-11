@@ -29,20 +29,4 @@ document.addEventListener("DOMContentLoaded", () => {
   
         experienceGroup.appendChild(radio)
         experienceGroup.appendChild(radioLabel)
-      })
-  
-      const removeButton = document.createElement("button")
-      removeButton.type = "button"
-      removeButton.textContent = "Remover"
-      removeButton.addEventListener("click", () => {
-        techDiv.remove()
-      })
-  
-      techDiv.appendChild(techInput)
-      techDiv.appendChild(experienceTitle)
-      techDiv.appendChild(experienceGroup)
-      techDiv.appendChild(removeButton)
-  
-      techContainer.appendChild(techDiv)
-    }
-  
+      }
